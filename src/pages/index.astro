@@ -9,22 +9,30 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
 const last_posts = posts.slice(0, 3);
 ---
 
+<style>
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
 <BaseLayout>
 
     <div class="pb-12 mt-5">
       <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-      <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+      <div class="text-5xl font-bold">I'm Eddie Naff</div>
+      <div class="text-3xl py-3 font-bold">Software Engineer</div>
       <div class="py-2">
         <text class="text-lg">
-          I made this template for everyone who needs to create a personal website easily and quickly. This template includes Project Section, CV Section, Store, Paginated Blog, RSS Feed, SEO Friendly, Responsive Desing and 29 Visual themes. I hope you find it useful!
+          I make full-stack web apps!
           </text
         >
       </div>
-      <div class="mt-8">
-        <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-        <a href="https://github.com/manuelernestog/astro-modern-personal-website" target="_blank" class="btn btn-outline ml-5"> Get This template</a>
-      </div>
+      
     </div>
 
     <div>
@@ -71,5 +79,41 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0"></div>
       ))
     }
+    <div id="contact">
+      <div class="text-3xl w-full font-bold mb-2">Contact</div>
+      <div>
+      <form
+      id="contact-form"
+        name="contact"
+        method="POST"
+        action="http://192.168.1.16:8080/contact"
+      >
+      <div class="form-control">
+
+      <!-- action="/success" -->
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
+        <input type="hidden" name="form-name" value="message" />
+        <label for="name" class="input-group input-group-vertical">
+          <span>Name</span>
+          <input id="name" type="text" name="name"   class="input input-bordered" />
+        </label>
+        <label for="email" class="input-group input-group-vertical">
+          <span>Email</span>
+          <input id="email" type="email" name="email" class="input input-bordered" required />
+        </label>
+          <label for="message" class="input-group input-group-vertical">
+          <span>What is your message?</span>
+          <textarea id="message" wrap="soft" name="message" class="textarea textarea-bordered" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </div>
+      </form>
+    </div>
+    </div>
 
 </BaseLayout>
