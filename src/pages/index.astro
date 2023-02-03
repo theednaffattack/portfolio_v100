@@ -11,13 +11,14 @@ const last_posts = posts.slice(0, 3);
 
 <style>
   
-  #contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  .my-label {
+
+  color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+ }
+
 </style>
 
 <BaseLayout>
@@ -79,41 +80,98 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0"></div>
       ))
     }
-    <div id="contact">
-      <div class="text-3xl w-full font-bold mb-2">Contact</div>
-      <div>
+    
+    <div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">Contact</div>
+    </div>
+    
       <form
       id="contact-form"
         name="contact"
         method="POST"
         action="http://192.168.1.16:8080/contact"
       >
-      <div class="form-control">
+      <div class="flex flex-col justify-center items-center">
+    <div class="form-control w-full max-w-xs space-y-4">
+      <div class="form-group"> 
 
-      <!-- action="/success" -->
-        <p class="hidden">
-          <label>
-            Don’t fill this out if you’re human: <input name="bot-field" />
-          </label>
-        </p>
-        <input type="hidden" name="form-name" value="message" />
-        <label for="name" class="input-group input-group-vertical">
-          <span>Name</span>
-          <input id="name" type="text" name="name"   class="input input-bordered" />
-        </label>
-        <label for="email" class="input-group input-group-vertical">
-          <span>Email</span>
-          <input id="email" type="email" name="email" class="input input-bordered" required />
-        </label>
-          <label for="message" class="input-group input-group-vertical">
-          <span>What is your message?</span>
-          <textarea id="message" wrap="soft" name="message" class="textarea textarea-bordered" required></textarea>
-        </label>
-        <button type="submit" class="btn btn-primary">Submit</button>
+      <label id="name-label" for="name" class="label my-label label-text">
+        Full Name
+      </label>
+      <input id="name" name="name" type="text" aria-labelledby="name-label" required class="input input-bordered bg-white rounded-md w-full max-w-xs" />
 
       </div>
-      </form>
+      
+      <div class="form-group">
+
+      <label id="email-label" for="email" class="label my-label">
+        <span class="label-text">Email</span>
+      </label>
+      <input id="email" name="email" type="email" aria-labelledby="email-label" required class="input input-bordered bg-white  rounded-md w-full max-w-xs" />
+      
+      </div>
+      
+      <div class="form-group">  
+        <label id="message-label" for="message" class="label my-label">
+          <span class="label-text">Message</span>
+        </label> 
+        <textarea id="message" name="message" aria-labelledby="message-label" required minlength="15" maxlength="1000" class="textarea textarea-bordered bg-white rounded-md h-48 w-full" ></textarea>
+       
+      </div>
+      <button type="submit" class="btn btn-primary rounded-md">Submit</button>
+
     </div>
-    </div>
+  </div>
+  </form>
+  <script>
+    import Pristine from "pristinejs";
+
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener("submit", handleSubmit);
+
+// Pristine.js config
+let defaultConfig = {
+    // class of the parent element where the error/success class is added
+    classTo: 'form-group',
+    errorClass: 'has-danger',
+    successClass: 'has-success',
+    // class of the parent element where error text element is appended
+    errorTextParent: 'form-group',
+    // type of element to create for the error text
+    errorTextTag: 'span',
+    // class of the error text element
+    errorTextClass: 'text-rose-600' 
+};
+
+const pristine = new Pristine(contactForm, defaultConfig, true);
+
+
+    function handleSubmit(event) {
+      console.log("HANDLE SUBMIT")
+  event.preventDefault()
+  const valid = pristine.validate();
+  console.log("VIEW VALID", {valid});
+  if(!valid){
+    console.log("VIEW ERRORS", {errors: pristine.getErrors()})
+    const formErrors = pristine.getErrors();
+    for (let errorIndex = 0; errorIndex < formErrors.length; errorIndex++) {
+      const inputElement = formErrors[errorIndex].input;
+      console.log("VIEW INPUT ELEMENT", {inputElement: inputElement.classList.contains("textarea")})
+
+      // isolate the textarea
+      if(inputElement.classList.contains("textarea")){
+        inputElement.classList.add("textarea-error");
+        // else if it's an input element...
+      } else {
+        inputElement.classList.add("input-error");
+      }
+    }
+  }
+    if(valid){
+    event.currentTarget.submit();
+
+    }
+}
+  </script>
 
 </BaseLayout>
