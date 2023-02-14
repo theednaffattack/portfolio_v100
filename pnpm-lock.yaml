@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@astrojs/mdx': ^0.11.1
@@ -19,10 +19,10 @@ dependencies:
   '@astrojs/mdx': 0.11.6_rollup@3.9.1
   '@astrojs/rss': 1.2.1
   '@astrojs/sitemap': 1.0.0
-  '@astrojs/tailwind': 3.0.1_jiulpwjund37q6yckwlgwo54mu
+  '@astrojs/tailwind': 3.0.1_astro@2.0.6+tailwindcss@3.2.4
   astro: 2.0.6
   autoprefixer: 10.4.13_postcss@8.4.21
-  daisyui: 2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44
+  daisyui: 2.46.1_30673f4a5b98519e6133a8e3e28629e7
   postcss: 8.4.21
   pristinejs: 0.1.9
   rollup: 3.9.1
@@ -143,7 +143,7 @@ packages:
       zod: 3.20.2
     dev: false
 
-  /@astrojs/tailwind/3.0.1_jiulpwjund37q6yckwlgwo54mu:
+  /@astrojs/tailwind/3.0.1_astro@2.0.6+tailwindcss@3.2.4:
     resolution: {integrity: sha512-QSYh/xmz454j1yZU9rjw2J24PpH7j3h2ClesqMaAniOtcuL8RfP7KYCnCrk01xvjwqqO+QBpZNDD/SUhHNtFFg==}
     peerDependencies:
       astro: ^2.0.4
@@ -1297,7 +1297,7 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  /daisyui/2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44:
+  /daisyui/2.46.1_30673f4a5b98519e6133a8e3e28629e7:
     resolution: {integrity: sha512-i59+nLuzzPAVOhNhot3KLtt6stfYeCIPXs9uiLcpXjykpqxHfBA3W6hQWOUWPMwfqhyQd0WKub3sydtPGjzLtA==}
     peerDependencies:
       autoprefixer: ^10.0.2
