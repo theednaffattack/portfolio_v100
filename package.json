@@ -23,9 +23,7 @@
     "pristinejs": "^0.1.9",
     "rollup": "^3.9.1",
     "tailwindcss": "^3.2.4",
-    "theme-change": "^2.3.0"
-  },
-  "devDependencies": {
+    "theme-change": "^2.3.0",
     "@tailwindcss/typography": "^0.5.7"
   }
 }
