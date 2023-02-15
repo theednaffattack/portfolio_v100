@@ -5,7 +5,8 @@
 `git remote add dokku dokku@<yourserver.com>:<dokku-app-name>`
 
 ## Dokku deploy command
-`git push dokku main`
+`git push dokku main`<br>
+`git subtree push --prefix dist dokku main`
 
 ## Buildpacks
 Static: https://github.com/dokku/heroku-buildpack-nginx 
