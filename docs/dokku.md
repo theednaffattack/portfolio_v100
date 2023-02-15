@@ -11,10 +11,13 @@
 Static: https://github.com/dokku/heroku-buildpack-nginx 
 
 
+### Using multiple buildpacks
+[Dokku docs](https://dokku.com/docs~v0.5.8/deployment/buildpacks/#using-multiple-buildpacks)
+
+**.buildpacks file example**
 ```bash
-dokku buildpacks:clear personal-site
-dokku buildpacks:set personal-site BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs.git#v203
-dokku buildpacks:set personal-site BUILDPACK_URL=https://github.com/dokku/heroku-buildpack-nginx.git#v22
+https://github.com/heroku/heroku-buildpack-nodejs.git#v203
+https://github.com/dokku/heroku-buildpack-nginx.git#v22
 ```
 
 
