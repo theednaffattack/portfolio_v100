@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/mdx': ^0.11.1
@@ -19,15 +19,15 @@ dependencies:
   '@astrojs/mdx': 0.11.6_rollup@3.9.1
   '@astrojs/rss': 1.2.1
   '@astrojs/sitemap': 1.0.0
-  '@astrojs/tailwind': 3.0.1_astro@2.0.6+tailwindcss@3.2.4
+  '@astrojs/tailwind': 3.0.1_jiulpwjund37q6yckwlgwo54mu
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
   astro: 2.0.6
   autoprefixer: 10.4.13_postcss@8.4.21
-  daisyui: 2.46.1_30673f4a5b98519e6133a8e3e28629e7
+  daisyui: 2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44
   postcss: 8.4.21
   pristinejs: 0.1.9
   rollup: 3.9.1
-  tailwindcss: 3.2.4
+  tailwindcss: 3.2.4_postcss@8.4.21
   theme-change: 2.3.0
 
 packages:
@@ -141,7 +141,7 @@ packages:
       zod: 3.20.2
     dev: false
 
-  /@astrojs/tailwind/3.0.1_astro@2.0.6+tailwindcss@3.2.4:
+  /@astrojs/tailwind/3.0.1_jiulpwjund37q6yckwlgwo54mu:
     resolution: {integrity: sha512-QSYh/xmz454j1yZU9rjw2J24PpH7j3h2ClesqMaAniOtcuL8RfP7KYCnCrk01xvjwqqO+QBpZNDD/SUhHNtFFg==}
     peerDependencies:
       astro: ^2.0.4
@@ -152,7 +152,7 @@ packages:
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
-      tailwindcss: 3.2.4
+      tailwindcss: 3.2.4_postcss@8.4.21
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -767,7 +767,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.4
+      tailwindcss: 3.2.4_postcss@8.4.21
     dev: false
 
   /@types/acorn/4.0.6:
@@ -1309,7 +1309,7 @@ packages:
     hasBin: true
     dev: false
 
-  /daisyui/2.46.1_30673f4a5b98519e6133a8e3e28629e7:
+  /daisyui/2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44:
     resolution: {integrity: sha512-i59+nLuzzPAVOhNhot3KLtt6stfYeCIPXs9uiLcpXjykpqxHfBA3W6hQWOUWPMwfqhyQd0WKub3sydtPGjzLtA==}
     peerDependencies:
       autoprefixer: ^10.0.2
@@ -1320,7 +1320,7 @@ packages:
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.21
       postcss-js: 4.0.0_postcss@8.4.21
-      tailwindcss: 3.2.4
+      tailwindcss: 3.2.4_postcss@8.4.21
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -3457,10 +3457,12 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /tailwindcss/3.2.4:
+  /tailwindcss/3.2.4_postcss@8.4.21:
     resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
