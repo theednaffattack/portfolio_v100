@@ -1,11 +1,21 @@
 # Dokku
 
 ## Dokku setup
-**Add a git remote for Dokku**
+**Add a git remote for Dokku**<br>
 `git remote add dokku dokku@<yourserver.com>:<dokku-app-name>`
 
-## Dokku deploy
-git push dokku main
+## Dokku deploy command
+`git push dokku main`
+
+## Buildpacks
+Static: https://github.com/dokku/heroku-buildpack-nginx 
+
+
+```bash
+dokku buildpacks:clear personal-site
+dokku buildpacks:set personal-site BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs.git#v203
+dokku buildpacks:set personal-site BUILDPACK_URL=https://github.com/dokku/heroku-buildpack-nginx.git#v22
+```
 
 
 
