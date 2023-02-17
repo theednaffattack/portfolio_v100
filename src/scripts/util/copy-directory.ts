@@ -2,6 +2,7 @@ import fse, { copy } from "fs-extra";
 import path from "path";
 import { fileURLToPath } from "url";
 import { CopyDirectoriesArgsType, CopyFilesArgsType } from "../../types";
+import { asyncWrapper } from "./async-wrapper";
 
 // Adapted from: https://flaviocopes.com/fix-dirname-not-defined-es-module-scope/
 
@@ -63,24 +64,6 @@ export async function copyDistToDokkuDeploy({ src = "dist" }: { src: string }) {
 
     if (dataCopyFiles) {
         console.log("Success!");
-    }
-}
-
-async function asyncWrapper(fn: (arg?) => Promise<any>, args = null) {
-    if (args) {
-        try {
-            const data = await fn(args);
-            return [null, data];
-        } catch (error) {
-            return [error, null];
-        }
-    } else {
-        try {
-            const data = await fn();
-            return [null, data];
-        } catch (error) {
-            return [error, null];
-        }
     }
 }
 
