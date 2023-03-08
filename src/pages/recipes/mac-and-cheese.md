@@ -6,7 +6,7 @@ pubDate: "Mar 2 2023"
 heroImage: "/mac-and-cheese.png"
 ---
 
-from: https://www.thechunkychef.com/family-favorite-baked-mac-and-cheese/#wprm-recipe-container-9151
+from: [Chunky Chef](https://www.thechunkychef.com/family-favorite-baked-mac-and-cheese/#wprm-recipe-container-9151)
 
 ## Ingredients
 
