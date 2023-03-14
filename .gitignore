@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# directory to keep git submodule
+dokku-deploy/
+
 # dependencies
 node_modules/
 
