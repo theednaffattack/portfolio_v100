@@ -3,19 +3,21 @@ layout: "../../layouts/PostLayout.astro"
 title: "Fried Chicken Sandwich"
 description: "Delicious, comforting, not too healthy."
 pubDate: "Mar 14 2023"
-heroImage: "/five-ingredient-fried-chicken-sandwiches.webp"
+heroImage: "/fried-chicken-sandwich.png"
 ---
 
 ## Ingredients
-- 1 jar sliced pickles, such as Vlasic, with brine
-- 4 boneless, skinless chicken thighs
-- Kosher salt and freshly ground black pepper
-- 1 cup buttermilk
-- 1 1/2 cups self-rising flour
-- 1 quart peanut, vegetable, or canola oil
-- 4 soft hamburger buns or potato rolls, toasted
+
+-   1 jar sliced pickles, such as Vlasic, with brine
+-   4 boneless, skinless chicken thighs
+-   Kosher salt and freshly ground black pepper
+-   1 cup buttermilk
+-   1 1/2 cups self-rising flour
+-   1 quart peanut, vegetable, or canola oil
+-   4 soft hamburger buns or potato rolls, toasted
 
 ## Directions
+
 1. Pour 3/4 cup pickle juice out of pickle jar into a measuring cup. Reserve pickles.
 2. Season chicken generously with salt and pepper. Place in a plastic zipper-lock bag. Pour in pickle juice. Seal bag, pressing out as much air as possible. Refrigerate and let chicken soak in pickle juice for at least 1 hour and up to 12 hours.
 3. When ready to fry, remove chicken from bag and discard pickle juice. Pat chicken dry with paper towels. Pour buttermilk into a medium bowl. Add flour and 1 tablespoon pepper to a second bowl. Transfer 3 tablespoons of buttermilk to bowl with flour and work it into the flour with your fingertips.
