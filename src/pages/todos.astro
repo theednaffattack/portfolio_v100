@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Todos } from "../components/todos";
+import { MdnTodos } from "../components/mdn-todos";
+---
+
+<BaseLayout title = "Todos">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Todos Header</div>
+  </div>
+  <Todos />
+  <MdnTodos />
+</BaseLayout>
