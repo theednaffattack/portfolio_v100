@@ -10,6 +10,21 @@
 `git push dokku main`<br>
 `git subtree push --prefix dist dokku main`
 
+## Dokku ssh keys
+https://www.digitalocean.com/community/questions/git-push-dokku-master-is-returning-permission-denied
+
+`dokku ssh-keys:list`
+
+`dokku ssh-keys:remove KEY_NAME`
+
+`dokku ssh-keys:remove --fingerprint FINGERPRINT`
+
+`dokku ssh-keys:add KEY_NAME path/to/id_rsa.pub`
+
+Add key remotely
+
+`cat ~/.ssh/id_rsa.pub | ssh root@dokku.me dokku ssh-keys:add KEY_NAME`
+
 ## Dokku zero downtime deploys
 
 [Dokku docs - deploy](https://dokku.com/docs/deployment/zero-downtime-deploys/)
