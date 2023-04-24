@@ -8,8 +8,6 @@ heroImage: "/tuna-salad.jpeg"
 
 ## Ingredients
 
-test
-
 -   4 (5 ounce) cans tuna packed in water drained (see note 1)
 -   1 cup mayonnaise or less to taste (see note 2)
 -   1/3 cup celery finely chopped (about 1 rib)
