@@ -9,31 +9,31 @@ heroImage: "/chicken-spiedies.webp"
 ## Ingredients
 
 -   ¾ cup white wine vinegar
--
+
 -   ½ cup olive oil
--
+
 -   ¼ cup freshly squeezed lemon juice
--
+
 -   ½ cup fresh mint leaves
--
+
 -   6 cloves garlic
--
+
 -   4 teaspoons white sugar
--
+
 -   1 teaspoon dried oregano
--
+
 -   1 teaspoon dried basil
--
+
 -   1 teaspoon salt
--
+
 -   ½ teaspoon red pepper flakes
--
+
 -   ½ teaspoon freshly ground black pepper
--
+
 -   3 pounds boneless skinless chicken thighs, cut into 3 pieces
--
+
 -   6 skewers
--
+
 -   6 Italian-style hoagie buns
 
 ## Directions
