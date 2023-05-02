@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/PostLayout.astro"
-title: "Chciken Spiedies"
+title: "Chicken Spiedies"
 description: "A grilled chicken sandwich to fucking die for."
 pubDate: "May 2 2023"
 heroImage: "/chicken-spiedies.webp"
